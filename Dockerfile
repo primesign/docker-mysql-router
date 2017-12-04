@@ -18,5 +18,5 @@ VOLUME /var/lib/mysqlrouter
 
 ENTRYPOINT ["/entrypoint.sh"]
 
-EXPOSE 3306 6606 33060
+EXPOSE 6446 6447
 CMD [""]
