@@ -11,6 +11,7 @@ RUN rpmkeys --import http://repo.mysql.com/RPM-GPG-KEY-mysql \
 
 RUN useradd -r -d /var/lib/mysql -s /bin/false -U mysql
 
+COPY bootstrap.sh /bootstrap.sh
 COPY entrypoint.sh /entrypoint.sh
 
 VOLUME /var/lib/mysqlrouter
