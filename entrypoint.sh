@@ -11,6 +11,6 @@ fi
 chown -R mysql:mysql "/mysqlrouter"
 
 # now that we've bootstrapped the setup, let's start the process
-CMD="mysqlrouter --user=mysql"
+CMD="mysqlrouter --directory=/mysqlrouter --user=mysql"
 
 exec $CMD
