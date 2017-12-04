@@ -14,8 +14,6 @@ RUN useradd -r -d /var/lib/mysql -s /bin/false -U mysql
 COPY bootstrap.sh /bootstrap.sh
 COPY entrypoint.sh /entrypoint.sh
 
-VOLUME /var/lib/mysqlrouter
-
 ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 6446 6447
